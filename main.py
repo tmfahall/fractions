@@ -10,8 +10,7 @@ def main():
     print("Enter two fractions to find their sum, difference, product, and quotient.")
     fraction1 = input("Enter your first fraction: ")
     fraction2 = input("Enter your second fraction: ")
-    str_int(fraction1)
-    str_int(fraction2)
+    str_int(fraction1,fraction2)
     print(add_fr(n1,d1,n2,d2))
     print(sub_fr(n1,d1,n2,d2))
     print(mult_fr(n1,d1,n2,d2))
@@ -26,10 +25,12 @@ def lcm(a,b):
             lcm += 1
     return lcm
 
-def str_int(a):
-    numerator = int(a[:a.index("/")])
-    denominator = int(a[a.index("/")+1:])
-    return numerator,denominator
+def str_int(a,b):
+    n1 = int(a[:a.index("/")])
+    d1 = int(a[a.index("/")+1:])
+    n2 = int(a[:a.index("/")])
+    d2 = int(a[a.index("/")+1:])
+    return n1,d1,n2,d2
 
 def gcd(a,b):
     gcd = math.gcd(a,b)
