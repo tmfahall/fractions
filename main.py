@@ -12,10 +12,10 @@ def main():
     fraction2 = input("Enter your second fraction: ")
     str_int(fraction1)
     str_int(fraction2)
-    print(add_fr(5,6,2,3))
-    print(sub_fr(5,6,2,3))
-    print(mult_fr(5,6,2,3))
-    print(div_fr(5,6,2,3))
+    print(add_fr(n1,d1,n2,d2))
+    print(sub_fr(n1,d1,n2,d2))
+    print(mult_fr(n1,d1,n2,d2))
+    print(div_fr(n1,d1,n2,d2))
     
 def lcm(a,b):
     if a < b:
